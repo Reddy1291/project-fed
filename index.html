@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initCommon(); initIndex();">
+  <div class="container">
+    <nav>
+      <a href="index.html">Login</a> |
+      <a href="createaccount.html">Register</a>
+    </nav>
+
+    <h1>WELCOME</h1>
+
+    <form id="loginForm">
+      <table>
+        <tr><td>Username (email)</td><td><input type="text" name="email" required></td></tr>
+        <tr><td>Password</td><td><input type="password" name="password" required></td></tr>
+        <tr><td colspan="2" style="text-align:center;">
+          <input type="submit" value="Login">
+          <input type="reset" value="Clear">
+        </td></tr>
+      </table>
+    </form>
+
+    <p class="link-center small">Don't have an account? <a href="createaccount.html">Create an Account</a></p>
+    <p class="notice small">Default admin: <strong>admin@school.com</strong> / <strong>admin123</strong></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script> /* init index specifically already run by onload */ </script>
+</body>
+</html>

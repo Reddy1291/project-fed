@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Student Dashboard</h1>
+
+<table>
+    <tr><td>Name:</td><td id="sName"></td></tr>
+    <tr><td>Email:</td><td id="sEmail"></td></tr>
+</table>
+
+<h2>My Projects</h2>
+<table id="projects">
+<tr><th>Title</th><th>Status</th></tr>
+</table>
+
+<h2>Add Project</h2>
+<form id="projectForm">
+    <input type="text" id="title" placeholder="Project Title" required>
+    <select id="status">
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select>
+    <button type="submit">Add Project</button>
+</form>
+
+<script src="js/script.js"></script>
+<script>
+window.onload = loadStudentProfile;
+
+document.getElementById("projectForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    let title = document.getElementById("title").value;
+    let status = document.getElementById("status").value;
+    addProject(title, status);
+    window.location.reload(); // refresh to show new project
+});
+</script>
+</body>
+</html>
