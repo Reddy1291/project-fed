@@ -1,0 +1,25 @@
+{
+  "name": "front-end-project",
+  "version": "1.0.0",
+  "description": "\"# project-fed\" \r # project-fed",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reddy1291/project-fed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reddy1291/project-fed/issues"
+  },
+  "homepage": "https://github.com/Reddy1291/project-fed#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
