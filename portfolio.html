@@ -5,29 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+    }
+    h1, h2 {
+        margin-top: 0;
+    }
+    .box {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    form input, form select, form button {
+        padding: 8px;
+        margin: 5px 0;
+    }
+    form button {
+        background: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    form button:hover {
+        background: #0056b3;
+    }
+</style>
 </head>
 <body>
 <h1>Student Dashboard</h1>
 
-<table>
-    <tr><td>Name:</td><td id="sName"></td></tr>
-    <tr><td>Email:</td><td id="sEmail"></td></tr>
-</table>
+<div class="box">
+    <h2>Student Profile</h2>
+    <table>
+        <tr>
+            <td><b>Name:</b></td>
+            <td><input type="text" id="sName" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td><b>Email:</b></td>
+            <td><input type="email" id="sEmail" placeholder="Enter your email"></td>
+        </tr>
+    </table>
+</div>
 
-<h2>My Projects</h2>
-<table id="projects">
-<tr><th>Title</th><th>Status</th></tr>
-</table>
+<div class="box">
+    <h2>My Projects</h2>
+    <table id="projects">
+        <tr><th>Title</th><th>Status</th></tr>
+    </table>
+</div>
 
-<h2>Add Project</h2>
-<form id="projectForm">
-    <input type="text" id="title" placeholder="Project Title" required>
-    <select id="status">
-        <option>In Progress</option>
-        <option>Completed</option>
-    </select>
-    <button type="submit">Add Project</button>
-</form>
+<div class="box">
+    <h2>Add Project</h2>
+    <form id="projectForm">
+        <input type="text" id="title" placeholder="Project Title" required>
+        <select id="status">
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+        <button type="submit">Add Project</button>
+    </form>
+</div>
+
+
 
 <script src="js/script.js"></script>
 <script>
